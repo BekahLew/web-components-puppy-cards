@@ -1,0 +1,72 @@
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    background-color: #585252;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.details {
+    text-align: center;
+    align-self: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.info {
+    display: none;
+}
+
+button {
+    font-family: "Roboto";
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    box-shadow: rgb(0 0 0 / 39%) 0px 1px 4px;
+    margin: .5rem;
+    background-color: #b99c93;
+    transition: .7s ease-in-out;
+}
+
+button:hover {
+    transition: .7s ease-in-out;
+    background-color: #bbada8;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .pet-card {
+        min-width: 30rem;
+        border-radius: 3px;
+        padding: 1rem;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: row;
+        box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
+    }
+
+    .avatar {
+        position: relative;
+        overflow: hidden;
+        border-radius: 100%;
+        width: 14rem;
+        height: 14rem;
+        box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
+    }
+
+    img {
+        position: absolute;
+        top: -3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
